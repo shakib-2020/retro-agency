@@ -1,0 +1,399 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: RetroSoft LTD team
+  Support: nazshakib01@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+html{
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.6rem;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	color: #2e2e2e;
+	margin-top: 0rem;
+	font-style: normal;
+	text-transform: normal;
+	line-height: 1.1;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 4.9rem;
+	font-weight: 500;
+}
+h2 {
+	font-size: 4.0rem;
+}
+h3 {
+	font-size: 3.2rem;
+}
+h4 {
+	font-size: 2.5rem;
+}
+h5 {
+	font-size: 2.0rem;
+}
+h6 {
+	font-size: 1.6rem;
+}
+ul {
+	margin: 0rem;
+	padding: 0rem;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	color: #B3B3B3;
+	margin-bottom: 1.5rem;
+}
+hr {
+	border-bottom: .1rem solid #eceff8;
+	border-top: 0 none;
+	margin: 3rem 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 1.4rem;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 1.4rem;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: .1rem solid #f2f2f2
+}
+/* button style */
+.btn {
+	-moz-user-select: none;
+	background: #278EA5;
+	border: .1rem solid transparent;
+	border-radius:1.2rem 0rem 1.2rem 0rem;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 2.4rem 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.5s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.btn:hover {
+	color: #278EA5;
+	background: #fff;
+	border: .1rem solid #278EA5;
+}
+.transparent-btn{
+	border: 2px solid #278EA5;
+	background: transparent;
+	color: #278EA5;
+}
+.transparent-btn:hover{
+	border: 2px solid #278EA5;
+	background: #278EA5;
+	color: #fff;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 4rem;
+	left: 2rem;
+	line-height: 4rem;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 4rem;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 2rem;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+/* scrollUp */
+#scrollUp {
+	background: #ee3364;
+	height: 3.5rem;
+	width: 3.5rem;
+	right: 5rem;
+	bottom: 3.5rem;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 2rem;
+	line-height: 3.4rem;
+}
+#scrollUp:hover {
+	background: #444;
+}
+/* header */
+.transparent-header{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.header-area {
+	padding: 2rem 0rem;
+}
+.logo {
+	padding-top: 0.5rem;
+}
+.menu {
+	padding: 1.9rem 0;
+}
+.menu ul li {
+	margin-right: 3.5rem;
+}
+.menu ul li a {
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #C1D6DB;
+	top: 0;
+	transition: .2s ease all;
+}
+.menu ul li a:hover {
+	top: -.5rem; 
+}
+/* hero */
+.hero-img img {
+	max-width: 100%;
+}
+.hero-text-wrapper h2 {
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: 0.2rem;
+}
+.hero-text-wrapper p {
+	padding-right: 10.3rem;
+	margin-top: 3rem;
+}
+.hero-btn-wrapper a {
+	padding: 2rem 2.5rem;
+	margin-right: 1.5rem;
+	margin-top: 3rem;
+}
+/* service */
+.service-area {
+	background-position: top left;
+}
+.service-text {
+	padding-top: 4rem;
+}
+.service-text h3 {
+  margin-bottom: 2.5rem;
+}
+.service-text p {
+	margin-bottom: 2.5rem;
+	margin-right: 3rem;
+}
+.service-img img{
+	max-width: 100%;
+}
+/* contact */
+.contact-img img{
+	max-width: 100%;
+}
+
+.ct-input{
+	background-color: transparent;
+	width: 95%;
+	height: 5rem;
+	margin: 1rem;
+	border: 2px solid #036378;
+	padding: 1rem 2rem;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	border-radius: 5px;
+	font-weight: 500;
+}
+.ct-input::placeholder {
+	font-weight: 600;
+	color: #20BADC;
+	opacity: 1;
+}
+.ct-input:focus::placeholder {
+	opacity: 0;
+}
+.contact-form select{
+	color: #20BADC;
+}
+.ct-input option {
+	background-color: #03313c;
+	color: #fff;
+}
+.contact-form textarea {
+	height: 16.5rem;
+}
+.ct-btn{
+	margin: 1rem;
+}
+/* footer */
+.footer-wrapper {
+	border-top: .1rem solid #278ea54f;
+}
+.footer-logo {
+	margin-bottom: 2.5rem;
+}
+.footer-wrapper a {
+	margin-right: 1rem;
+	text-decoration: none;
+	color: #ffffffad;
+}
+.footer-wrapper i{
+	margin-right: 1rem;
+}
+.footer-wrapper ul{
+	margin-top: 1rem;
+}
+.footer-wrapper ul li {
+	margin-bottom: 1rem;
+}
+.footer-wrapper ul li:hover {
+	letter-spacing: .1rem;
+}
+.footer-wrapper ul li:hover a{
+	color: #20BADC;
+}
