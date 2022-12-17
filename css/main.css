@@ -247,29 +247,14 @@ label {
 	background: #2B96CC;
 	color: #fff
 }
-/* scrollUp */
-#scrollUp {
-	background: #ee3364;
-	height: 3.5rem;
-	width: 3.5rem;
-	right: 5rem;
-	bottom: 3.5rem;
-	color: #fff;
-	font-size: 2rem;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 2rem;
-	line-height: 3.4rem;
-}
-#scrollUp:hover {
-	background: #444;
-}
 /* header */
+
 .transparent-header{
 	position: absolute;
 	left: 0;
 	right: 0;
 	z-index: 1;
+	transition: .5s all;
 }
 .header-area {
 	padding: 2rem 0rem;
@@ -295,6 +280,15 @@ label {
 }
 .menu ul li a:hover {
 	top: -.5rem; 
+}
+.sticky-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: #003946;
+	padding: 4px 0px;
 }
 /* hero */
 .hero-img img {
@@ -396,4 +390,27 @@ label {
 }
 .footer-wrapper ul li:hover a{
 	color: #20BADC;
+}
+/* scrollUp */
+#scrollUp {
+	height: 6.5rem;
+	width: 7.5rem;
+	right: 1rem;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.2rem;
+	background: #606060;
+	border: .1rem solid gray;
+	border-bottom: none;
+	border-radius: .5rem .5rem 0 0;
+	text-decoration: none;
+	font-weight: 500;
+	padding-top: 1rem;
+	transition: .5s;
+
+}
+#scrollUp:hover {
+	background: #444;
+	height: 7.5rem;
 }
