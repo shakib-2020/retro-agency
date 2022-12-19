@@ -37,11 +37,11 @@
               </div>
             </div>
             <div class="col-lg-10">
-              <div class="head-cta f-right">
+              <div class="head-cta f-right d-none d-lg-block d-xl-block">
                 <a class="btn" href="">Contact Us</a>
               </div>
-              <div class="menu f-right">
-                <ul class="d-flex">
+              <nav id="mobile-menu" class="main-menu f-right">
+                <ul>
                   <li>
                     <a href="#">Home</a>
                   </li>
@@ -54,9 +54,13 @@
                   <li>
                     <a href="#">About Us</a>
                   </li>
+                  <li class="d-none d-md-block d-lg-none">
+                    <a href="">Contact Us</a>
+                  </li>
                 </ul>
-              </div>
+              </nav>
             </div>
+            <div class="mobile-menu"></div>
           </div>
         </div>
       </div>
@@ -123,22 +127,26 @@
             <div
               class="single-service-right wow animate__animated animate__fadeInRight"
             >
-              <div class="row">
+              <!-- all right-img will have flex column reverse -->
+              <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
-                  <div class="service-text">
-                    <h3 class="white-color">App Development</h3>
-                    <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
-                    </p>
-                  </div>
-                  <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                  <div class="service-text-wrapper mb-30">
+                    <div class="service-text">
+                      <h3 class="white-color">App Development</h3>
+                      <p>
+                        In 21st century, your website is the first impression of
+                        your business. It has to be slick, mobile friendly,
+                        fast, responsive and it has to work as a salesperson for
+                        your business. <br />
+                        <br />
+                        Our website package covers it all. It also comes with
+                        free logo, domain and hosting so you don't have to spend
+                        extra.
+                      </p>
+                    </div>
+                    <div class="service-btn">
+                      <a class="btn transparent-btn" href="">Learn More</a>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -169,7 +177,7 @@
                     <img src="img/services/service-placeholder.png" alt="" />
                   </div>
                 </div>
-                <div class="col-lg-6 pl-30">
+                <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Web Development</h3>
                     <p>
@@ -203,7 +211,7 @@
             <div
               class="single-service-right wow animate__animated animate__fadeInRight"
             >
-              <div class="row">
+              <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Search Engine Optimisation</h3>
@@ -249,7 +257,7 @@
                     <img src="img/services/service-placeholder.png" alt="" />
                   </div>
                 </div>
-                <div class="col-lg-6 pl-30">
+                <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Social Media Management</h3>
                     <p>
@@ -283,7 +291,7 @@
             <div
               class="single-service-right wow animate__animated animate__fadeInRight"
             >
-              <div class="row">
+              <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Travel Expert</h3>
@@ -329,7 +337,7 @@
                     <img src="img/services/service-placeholder.png" alt="" />
                   </div>
                 </div>
-                <div class="col-lg-6 pl-30">
+                <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">UI/UX</h3>
                     <p>
@@ -363,7 +371,7 @@
             <div
               class="single-service-right wow animate__animated animate__fadeInRight"
             >
-              <div class="row">
+              <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Business Development</h3>
@@ -408,7 +416,7 @@
                 <h2 class="white-color">About Us</h2>
               </div>
               <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+                <div class="col-lg-8 offset-lg-2">
                   <div class="about-text text-center">
                     <p>
                       RetroSoft started in 2022 to empower small businesses.
@@ -503,7 +511,11 @@
       <footer>
         <div
           class="footer-wrapper pb-70 pt-70"
-          style="background-image: url(img/bg/bg-low-dark.png)"
+          style="
+            background-image: url(img/bg/bg-low-dark.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
         >
           <div class="container">
             <div class="row">
@@ -515,7 +527,7 @@
             </div>
             <div class="row">
               <div class="col-lg-3">
-                <div class="footer-quick-link">
+                <div class="footer-quick-link mb-30">
                   <h5 class="white-color">Quick Links</h5>
                   <ul>
                     <li>
@@ -534,7 +546,7 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="footer-service-link">
+                <div class="footer-service-link mb-30">
                   <h5 class="white-color">Services</h5>
                   <ul>
                     <li>
@@ -562,7 +574,7 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="footer-contact">
+                <div class="footer-contact mb-30">
                   <h5 class="white-color">Contact Us</h5>
                   <ul>
                     <li>
@@ -591,7 +603,7 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="footer-address">
+                <div class="footer-address mb-30">
                   <h5 class="white-color">Address</h5>
                   <ul>
                     <li>

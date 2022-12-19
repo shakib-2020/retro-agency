@@ -62,7 +62,7 @@ a:focus,
 a:focus,
 a:hover,
 .portfolio-cat a:hover,
-.footer -menu li a:hover {
+.footer -main-menu li a:hover {
 	color: #2B96CC;
 	text-decoration: none;
 }
@@ -262,13 +262,14 @@ label {
 .logo {
 	padding-top: 0.5rem;
 }
-.menu {
+.main-menu {
 	padding: 1.9rem 0;
 }
-.menu ul li {
+.main-menu li {
 	margin-right: 3.5rem;
+	float: left;
 }
-.menu ul li a {
+.main-menu li a {
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
@@ -278,7 +279,7 @@ label {
 	top: 0;
 	transition: .2s ease all;
 }
-.menu ul li a:hover {
+.main-menu li a:hover {
 	top: -.5rem; 
 }
 .sticky-menu {
