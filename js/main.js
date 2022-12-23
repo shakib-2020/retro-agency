@@ -1,9 +1,5 @@
-// WOW active
-wow = new WOW({ boxClass: "wow", animateClass: "animated", offset: 100 });
-wow.init();
 (function ($) {
   "use strict";
-
   // sticky-header
   let wind = $(window);
   let sticky = $("#sticky-header");
@@ -17,11 +13,11 @@ wow.init();
     }
   });
   //butter.js for smooth scrolling
-  butter.init({
-    wrapperId: "butter",
-    wrapperDamper: 0.1,
-    cancelOnTouch: true,
-  });
+  // butter.init({
+  //   wrapperId: "butter",
+  //   wrapperDamper: 0.1,
+  //   cancelOnTouch: true,
+  // });
 
   // meanmenu
   $("#mobile-menu").meanmenu({
@@ -30,11 +26,11 @@ wow.init();
     onePage: true,
   });
 
-  // onepage nav
-  $(".scroll").onePgaeNav({
-    wrapper: "#onepage-nav",
-    activeClass: "active",
-  });
+  // // onepage nav
+  // $(".scroll").onePgaeNav({
+  //   wrapper: "#onepage-nav",
+  //   activeClass: "active",
+  // });
   // main slider
   $(".slider-active").slick({
     dots: false,
@@ -97,3 +93,20 @@ wow.init();
     activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF',
   });
 })(jQuery);
+
+const josh = new Josh({
+  // DOM CSS class to Animate, default is "josh-js"
+  initClass: "josh-js",
+
+  // Animation CSS class from Animate.css library
+  animClass: "animate__animated",
+
+  // Element distance of viewport to triggering the animation. default is 0.2 means 20% of element view animation will trigger
+  offset: 0.2,
+
+  // Animation will trigger on Mobile or not. Default is true
+  animateInMobile: true,
+
+  // Animation will trigger on newly added element or not. Default is false
+  onDOMChange: true,
+});

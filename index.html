@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RetroSoft LTD.</title>
+    <title>RetroSoft LTD</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- cdn -->
     <link
@@ -33,29 +51,46 @@
           <div class="row">
             <div class="col-lg-2">
               <div class="logo">
-                <img src="img/logo/logo.png" alt="" />
+                <a href="/">
+                  <img src="img/logo/logo.png" alt="restrosoft logo" />
+                </a>
               </div>
             </div>
             <div class="col-lg-10">
               <div class="head-cta f-right d-none d-lg-block d-xl-block">
-                <a class="btn" href="">Contact Us</a>
+                <a class="btn" href="#contact">Contact Us</a>
               </div>
               <nav id="mobile-menu" class="main-menu f-right">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#">How we work</a>
+                    <a href="#how_we_work">How we work</a>
                   </li>
                   <li>
-                    <a href="#">Our Services</a>
+                    <a href="#services">Our Services</a>
+                    <ul class="submenu">
+                      <li><a href="#services">UI/UX</a></li>
+                      <li><a href="#web">Web Development</a></li>
+                      <li><a href="#app">App Development</a></li>
+                      <li>
+                        <a href="#seo">Search Engine Optimisation</a>
+                      </li>
+                      <li>
+                        <a href="#smm">Social Media Management</a>
+                      </li>
+                      <li><a href="#travel">Travel Expert</a></li>
+                      <li>
+                        <a href="#business">Business Development</a>
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="#about">About Us</a>
                   </li>
                   <li class="d-none d-md-block d-lg-none">
-                    <a href="">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                   </li>
                 </ul>
               </nav>
@@ -67,7 +102,7 @@
     </header>
     <main id="butter">
       <!-- hero section start -->
-      <section>
+      <section id="home">
         <div
           class="hero-area pb-130"
           style="background-image: url('img/hero/hero-bg.png')"
@@ -76,30 +111,37 @@
             <div class="row">
               <div class="col-lg-6">
                 <div
-                  class="hero-text-wrapper mt-200 animate__animated animate__fadeInLeft"
+                  class="element josh-js"
+                  data-josh-anim-name="fadeInLeft"
+                  data-josh-duration="1500ms"
                 >
-                  <h2 class="primary-color">
-                    How to <span class="white-color">level up</span> your
-                    business
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-                    faucibus tellus leo non pellentesque lorem vel. Arcu magna
-                    eros, potenti duis.
-                  </p>
-                  <div class="hero-btn-wrapper">
-                    <a class="btn" href="">How we work</a>
-                    <a class="btn transparent-btn" href=""
-                      >Let's talk <i class="fa-solid fa-arrow-right"></i
-                    ></a>
+                  <div class="hero-text-wrapper mt-200">
+                    <h2 class="primary-color">
+                      We build a
+                      <span class="white-color">future</span> together
+                    </h2>
+                    <p>
+                      Our mission is to make your business better through
+                      technology and connect people through tech.
+                    </p>
+                    <div class="hero-btn-wrapper">
+                      <a class="btn" href="#how_we_work">How we work</a>
+                      <a class="btn transparent-btn" href="#contact"
+                        >Let's talk <i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div
-                  class="hero-img mt-200 animate__animated animate__fadeInRight"
+                  class="element josh-js"
+                  data-josh-anim-name="fadeInRight"
+                  data-josh-duration="1500ms"
                 >
-                  <img src="img/hero/hero-img.png" alt="" />
+                  <div class="hero-img mt-200">
+                    <img src="img/hero/hero-img.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,6 +153,7 @@
       <section>
         <!-- 1st-service right-img Starting-->
         <div
+          id="services"
           class="service-area pb-70 pt-100"
           style="
             background-image: url('img/bg/bg-dark.png');
@@ -120,38 +163,41 @@
         >
           <div class="container">
             <div class="row">
-              <div class="section-title text-center mb-60">
+              <div class="section-title text-center mb-70">
                 <h2 class="white-color">Our Services</h2>
               </div>
             </div>
             <div
-              class="single-service-right wow animate__animated animate__fadeInRight"
+              class="single-service-right josh-js"
+              data-josh-anim-name="fadeInRight"
+              data-josh-duration="1500ms"
             >
               <!-- all right-img will have flex column reverse -->
               <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text-wrapper mb-30">
                     <div class="service-text">
-                      <h3 class="white-color">App Development</h3>
+                      <h3 class="white-color">UI/UX</h3>
                       <p>
-                        In 21st century, your website is the first impression of
-                        your business. It has to be slick, mobile friendly,
-                        fast, responsive and it has to work as a salesperson for
-                        your business. <br />
-                        <br />
-                        Our website package covers it all. It also comes with
-                        free logo, domain and hosting so you don't have to spend
-                        extra.
+                        UX and UI design are two different elements of a single
+                        consumer experience. UX refers to the user experience,
+                        which focuses on how something works and how people
+                        interact with it. UI, or user interface, focuses on the
+                        look and layout.
                       </p>
                     </div>
                     <div class="service-btn">
-                      <a class="btn transparent-btn" href="">Learn More</a>
+                      <a
+                        class="btn transparent-btn"
+                        href="pages/learn_more/learn_more_uiux.html"
+                        >Learn More</a
+                      >
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-uiux-min.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -160,7 +206,8 @@
         </div>
         <!-- 2nd service Left-img-->
         <div
-          class="service-area pb-70 pt-70"
+          id="web"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-low-dark.png');
             background-repeat: no-repeat;
@@ -169,29 +216,35 @@
         >
           <div class="container">
             <div
-              class="single-service-left wow animate__animated animate__fadeInLeft"
+              class="single-service-left josh-js"
+              data-josh-anim-name="fadeInLeft"
+              data-josh-duration="1500ms"
             >
               <div class="row">
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-web-min.png" alt="" />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Web Development</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      Web development is the structure behind building and
+                      developing a fantastic and responsive website for your
+                      business. It can start from a single static page to a
+                      comprehensive list of applications and social network
+                      services. Hence web development can include engineering,
+                      design, content development, client liaison, scripting,
+                      security and e-commerce development.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_web.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
               </div>
@@ -200,7 +253,8 @@
         </div>
         <!-- 3st-service right-img -->
         <div
-          class="service-area pb-70 pt-70"
+          id="app"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-dark.png');
             background-repeat: no-repeat;
@@ -209,29 +263,32 @@
         >
           <div class="container">
             <div
-              class="single-service-right wow animate__animated animate__fadeInRight"
+              class="single-service-right josh-js"
+              data-josh-anim-name="fadeInRight"
+              data-josh-duration="1500ms"
             >
               <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
-                    <h3 class="white-color">Search Engine Optimisation</h3>
+                    <h3 class="white-color">App Development</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      Mobile app development is the process used to create
+                      software for smartphones, tablets, and mobile devices. The
+                      overall process includes writing code to create the
+                      software and designing the app.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_app.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-app-min.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -240,7 +297,8 @@
         </div>
         <!-- 4th service Left-img-->
         <div
-          class="service-area pb-70 pt-70"
+          id="seo"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-low-dark.png');
             background-repeat: no-repeat;
@@ -249,29 +307,34 @@
         >
           <div class="container">
             <div
-              class="single-service-left wow animate__animated animate__fadeInLeft"
+              class="single-service-left josh-js"
+              data-josh-anim-name="fadeInLeft"
+              data-josh-duration="1500ms"
             >
               <div class="row">
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-seo-min.png" alt="" />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-text">
-                    <h3 class="white-color">Social Media Management</h3>
+                    <h3 class="white-color">Search Engine Optimisation</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      People use the internet to research their next purchase,
+                      and when they’ve narrowed down their options, they use a
+                      search engine to find the best way of buying it. Your
+                      products, content or services will be placed in front of
+                      users when you’ve effectively adhered to the best
+                      practices of Search Engine Optimisation.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_seo.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
               </div>
@@ -280,7 +343,8 @@
         </div>
         <!-- 5th-service right-img -->
         <div
-          class="service-area pb-70 pt-70"
+          id="smm"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-dark.png');
             background-repeat: no-repeat;
@@ -289,29 +353,35 @@
         >
           <div class="container">
             <div
-              class="single-service-right wow animate__animated animate__fadeInRight"
+              class="single-service-right josh-js"
+              data-josh-anim-name="fadeInRight"
+              data-josh-duration="1500ms"
             >
               <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
-                    <h3 class="white-color">Travel Expert</h3>
+                    <h3 class="white-color">Social Media Management</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      Social media management is the process of analyzing social
+                      media audiences and developing a strategy that’s tailored
+                      to them, creating and distributing content for social
+                      media profiles, monitoring online conversations,
+                      collaborating with influencers, providing community
+                      service, and monitoring, measuring, and reporting on
+                      social media performance and ROI.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_social.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-smm-min.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -320,7 +390,8 @@
         </div>
         <!-- 6th service Left-img-->
         <div
-          class="service-area pb-70 pt-70"
+          id="travel"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-low-dark.png');
             background-repeat: no-repeat;
@@ -329,29 +400,35 @@
         >
           <div class="container">
             <div
-              class="single-service-left wow animate__animated animate__fadeInLeft"
+              class="single-service-left josh-js"
+              data-josh-anim-name="fadeInLeft"
+              data-josh-duration="1500ms"
             >
               <div class="row">
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-travel-min.png" alt="" />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-text">
-                    <h3 class="white-color">UI/UX</h3>
+                    <h3 class="white-color">Travel Expert</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      Our network of independent travel advisors is comprised of
+                      entrepreneurs who are passionate about travel and are
+                      always seeking new ways to craft the best travel
+                      experiences for each of their clients. With advisors
+                      located across 38 states, rest assured you will find
+                      someone that is the perfect match to make your travel
+                      dreams become a reality.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_travel.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
               </div>
@@ -360,7 +437,8 @@
         </div>
         <!-- 7th-service right-img -->
         <div
-          class="service-area pb-70 pt-70"
+          id="business"
+          class="service-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-dark.png');
             background-repeat: no-repeat;
@@ -369,29 +447,35 @@
         >
           <div class="container">
             <div
-              class="single-service-right wow animate__animated animate__fadeInRight"
+              class="single-service-right josh-js"
+              data-josh-anim-name="fadeInRight"
+              data-josh-duration="1500ms"
             >
               <div class="row flex-column-reverse flex-lg-row">
                 <div class="col-lg-6">
                   <div class="service-text">
                     <h3 class="white-color">Business Development</h3>
                     <p>
-                      In 21st century, your website is the first impression of
-                      your business. It has to be slick, mobile friendly, fast,
-                      responsive and it has to work as a salesperson for your
-                      business. <br />
-                      <br />
-                      Our website package covers it all. It also comes with free
-                      logo, domain and hosting so you don't have to spend extra.
+                      Business development can be defined as the creation of
+                      value for an organization or business. This includes
+                      brainstorming new ideas, initiatives, and activities to
+                      increase profitability. The goal of business development
+                      is not just to increase profits, the goal is to make
+                      intelligent business decisions that create value for
+                      organizations and customers.
                     </p>
                   </div>
                   <div class="service-btn">
-                    <a class="btn transparent-btn" href="">Learn More</a>
+                    <a
+                      class="btn transparent-btn"
+                      href="/pages/learn_more/learn_more_business.html"
+                      >Learn More</a
+                    >
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="service-img">
-                    <img src="img/services/service-placeholder.png" alt="" />
+                    <img src="./img/services/service-business-min.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -401,9 +485,9 @@
       </section>
       <!-- service section end -->
       <!-- About section start -->
-      <section>
+      <section id="about">
         <div
-          class="about-area pt-70 pb-70"
+          class="about-area pt-100 pb-100"
           style="
             background-image: url('img/bg/bg-dark.png');
             background-repeat: no-repeat;
@@ -411,13 +495,17 @@
           "
         >
           <div class="container">
-            <div class="row wow animate__animated animate__zoomIn">
+            <div
+              class="row josh-js"
+              data-josh-anim-name="zoomIn"
+              data-josh-duration="1500ms"
+            >
               <div class="section-title text-center mb-50">
                 <h2 class="white-color">About Us</h2>
               </div>
               <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                  <div class="about-text text-center">
+                  <div class="about-text text-center josh-js">
                     <p>
                       RetroSoft started in 2022 to empower small businesses.
                       It's a team of designers, engineers, marketers, and
@@ -440,10 +528,53 @@
         </div>
       </section>
       <!-- About section end -->
+      <!-- How we work section start (segment copied for about)-->
+      <section id="how_we_work">
+        <div
+          class="about-area pt-100 pb-100"
+          style="
+            background-image: url('img/bg/bg-dark.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div
+              class="row josh-js"
+              data-josh-anim-name="zoomIn"
+              data-josh-duration="1500ms"
+            >
+              <div class="section-title text-center mb-50">
+                <h2 class="white-color">How we work</h2>
+                <h4>
+                  Our aim is to help you deliver great service experiences,
+                  increase revenues and grow your business.
+                </h4>
+              </div>
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                  <div class="about-text text-center josh-js">
+                    <p>
+                      We start by listening to your issues, requirements,
+                      challenges and objectives. The process continues with an
+                      effort to understand your business, market sector and
+                      competitors to develop information which is combined with
+                      our technical knowledge, expertise and research in order
+                      to provide you with the best solution at the lowest cost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how we work section end -->
       <!-- Contact section start -->
       <section>
         <div
-          class="contact-area pb-70 pt-100"
+          id="contact"
+          class="contact-area pb-100 pt-100"
           style="
             background-image: url('img/bg/bg-dark.png');
             background-repeat: no-repeat;
@@ -452,12 +583,12 @@
         >
           <div class="container">
             <div class="row">
-              <div class="section-title text-center mb-60">
-                <h2
-                  class="theme-color fw-bold wow animate__animated animate__jackInTheBox"
-                >
-                  Make an Inquiry
-                </h2>
+              <div
+                class="section-title text-center mb-60 josh-js"
+                data-josh-anim-name="zoomIn"
+                data-josh-duration="1500ms"
+              >
+                <h2 class="theme-color fw-bold">Make an Inquiry</h2>
                 <p class="mt-15">
                   "Neque porro quisquam est qui dolorem ipsum quia dolor sit
                   amet, consectetur, adipisci velit..."
@@ -466,15 +597,40 @@
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <div class="contact-form">
-                  <form action="/">
-                    <input class="ct-input" type="text" placeholder="Name" />
-                    <input class="ct-input" type="text" placeholder="Email" />
-                    <input class="ct-input" type="text" placeholder="Number" />
-                    <select class="ct-input" id="services" name="services">
+                <div
+                  class="contact-form josh-js"
+                  data-josh-anim-name="fadeInLeft"
+                  data-josh-duration="1500ms"
+                >
+                  <form action="https://formspree.io/f/mzbqparq" method="POST">
+                    <input
+                      class="ct-input"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                    />
+                    <input
+                      class="ct-input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                    <input
+                      class="ct-input"
+                      type="phone number"
+                      name="phone"
+                      placeholder="Number"
+                    />
+                    <select
+                      class="ct-input"
+                      id="services"
+                      name="_optin"
+                      type="boolean"
+                    >
                       <option value="none" selected disabled>
                         Select a service
                       </option>
+                      <option value="UI/UX">UI/UX</option>
                       <option value="App Development">App Development</option>
                       <option value="Web Development">Web Development</option>
                       <option value="Search Engine Optimisation">
@@ -483,22 +639,33 @@
                       <option value="Social Media Management">
                         Social Media Management
                       </option>
+                      <option value="Social Media Management">
+                        Business Development
+                      </option>
+                      <option value="Social Media Management">
+                        Travel Expert
+                      </option>
                     </select>
-
                     <textarea
                       class="ct-input"
                       name="message"
+                      type="text"
                       id=""
                       cols="30"
                       rows="5"
                       placeholder="Write your message"
+                      maxlength="500"
                     ></textarea>
-                    <button class="btn ct-btn" type="button">Submit</button>
+                    <button class="btn ct-btn" type="submit">Submit</button>
                   </form>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="contact-img">
+                <div
+                  class="contact-img josh-js"
+                  data-josh-anim-name="fadeInRight"
+                  data-josh-duration="1500ms"
+                >
                   <img src="img/contact/contact-img.png" alt="" />
                 </div>
               </div>
@@ -531,16 +698,16 @@
                   <h5 class="white-color">Quick Links</h5>
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="#home">Home</a>
                     </li>
                     <li>
-                      <a href="#">How we work</a>
+                      <a href="#how_we_work">How we work</a>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <a href="#services">Our Services</a>
                     </li>
                     <li>
-                      <a href="#">About Us</a>
+                      <a href="#about">About Us</a>
                     </li>
                   </ul>
                 </div>
@@ -550,25 +717,25 @@
                   <h5 class="white-color">Services</h5>
                   <ul>
                     <li>
-                      <a href="#">UI/UX</a>
+                      <a href="#services">UI/UX</a>
                     </li>
                     <li>
-                      <a href="#">App Development</a>
+                      <a href="#app">App Development</a>
                     </li>
                     <li>
-                      <a href="#">Web Development</a>
+                      <a href="#web">Web Development</a>
                     </li>
                     <li>
-                      <a href="#">Search Engine Optimisation</a>
+                      <a href="#seo">Search Engine Optimisation</a>
                     </li>
                     <li>
-                      <a href="#">Social Media Management</a>
+                      <a href="#smm">Social Media Management</a>
                     </li>
                     <li>
-                      <a href="#">Business Development</a>
+                      <a href="#business">Business Development</a>
                     </li>
                     <li>
-                      <a href="#">Travel Expert</a>
+                      <a href="#travel">Travel Expert</a>
                     </li>
                   </ul>
                 </div>
@@ -578,24 +745,17 @@
                   <h5 class="white-color">Contact Us</h5>
                   <ul>
                     <li>
-                      <a href="#"
+                      <a
+                        href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=retrosoftltd@gmail.com"
+                        target="_blank"
                         ><i class="fa-solid fa-envelope"></i
-                        >retrosoft@gmail.com</a
+                        >retrosoftltd@gmail.com</a
                       >
                     </li>
                     <li>
-                      <a href="#"
-                        ><i class="fa-solid fa-square-phone"></i>+880
-                        1745629989</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-brands fa-facebook"></i>Facebook</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
+                      <a
+                        href="https://www.linkedin.com/in/retrosoft-ltd-69811425b/"
+                        target="_blank"
                         ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
                       >
                     </li>
@@ -608,8 +768,7 @@
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa-solid fa-location-dot"></i> 3891 Ranchview
-                        Dr. Richardson, California 62639
+                        <i class="fa-solid fa-location-dot"></i>currently remote
                       </a>
                     </li>
                   </ul>
@@ -619,7 +778,15 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="copyright-text text-center mt-30">
-                  <p>© 2021 Up Business by AbellVo | All Rights Reserved</p>
+                  <!-- <div>
+                    <p class="tarms-area">
+                      <a href="">Privacy Policy</a>|<a href="">Cookies Policy</a
+                      >|<a href="">Terms of Use </a>
+                    </p>
+                  </div> -->
+                  <div>
+                    <p>©2022 by retrosoft.com | All Rights Reserved</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -639,10 +806,9 @@
     <script src="js/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
-    <script src="js/onepageNav.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/butter.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
