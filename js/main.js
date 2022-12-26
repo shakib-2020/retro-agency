@@ -110,3 +110,9 @@ const josh = new Josh({
   // Animation will trigger on newly added element or not. Default is false
   onDOMChange: true,
 });
+
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
