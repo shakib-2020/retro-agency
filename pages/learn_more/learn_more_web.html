@@ -203,8 +203,8 @@
               >
                 <h2 class="theme-color fw-bold">Make an Inquiry</h2>
                 <p class="mt-15">
-                  "Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit..."
+                  Please get intouch and our expert support team will answer all
+                  your questions.
                 </p>
               </div>
             </div>
@@ -345,10 +345,10 @@
                       <a href="/index.html#smm">Social Media Management</a>
                     </li>
                     <li>
-                      <a href="/index.html#business">Business Development</a>
+                      <a href="/index.html#travel">Travel Expert</a>
                     </li>
                     <li>
-                      <a href="/index.html#travel">Travel Expert</a>
+                      <a href="/index.html#business">Business Development</a>
                     </li>
                   </ul>
                 </div>
@@ -408,7 +408,14 @@
       </footer>
       <!-- footer end -->
     </main>
-
+    <!-- script -->
+    <script>
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName("form")) {
+          form.reset();
+        }
+      };
+    </script>
     <!-- js here -->
     <script src="./../../js/jquery-3.6.1.min.js"></script>
     <script src="./../../js/popper.min.js"></script>
